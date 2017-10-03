@@ -1,0 +1,41 @@
+{
+  "name": "ink-task",
+  "version": "0.1.2",
+  "description": "Bringing task handling on Ink.",
+  "main": "index.js",
+  "directories": {
+    "build": "build"
+  },
+  "scripts": {
+    "build": "babel lib -d build",
+    "lint": "eslint lib",
+    "prepublish": "npm run lint && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-class-property": "^1.0.6",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0",
+    "preact-compat": "^3.17.0"
+  },
+  "keywords": [
+    "ink",
+    "preact"
+  ],
+  "author": "Zachary E. Dahan <hello@zachary.pm>",
+  "license": "MIT",
+  "dependencies": {
+    "ink": "^0.3.1",
+    "minimist": "^1.2.0",
+    "prop-types": "^15.6.0"
+  }
+}

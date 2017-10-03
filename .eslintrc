@@ -1,0 +1,22 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "class-property"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "h"
+    }
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "semi": "off",
+    "no-unused-vars": [1, { "varsIgnorePattern": "^h$" }],
+    "class-methods-use-this": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/no-array-index-key": "warn",
+    "react/no-unused-prop-types": "off"
+  }
+}
